@@ -11,7 +11,9 @@ Once the facial landmarks are mapped, we extract the coordinates for both eyes a
 $$\text{EAR}=\frac{\|p_2-p_6\|+\|p_3-p_5\|}{2\|p_1-p_4\|}$$
 
 We then take the average of the left and right EARs to establish a single, stable EAR metric for the current frame.
-<img width="223" height="147" alt="Captura de tela 2026-05-18 151342" src="https://github.com/user-attachments/assets/9d11a30e-70c1-483c-8733-49e4d78fbfe8" />
+<p align="center">
+  <img width="223" height="147" alt="Captura de tela 2026-05-18 151342" src="https://github.com/user-attachments/assets/9d11a30e-70c1-483c-8733-49e4d78fbfe8" />
+</p>
 
 **3. Temporal Feature Vector**
 A single frame's EAR is often insufficient to classify a blink accurately. To capture the temporal pattern of a blink (the closing and opening of the eye over time), we rely on a 13-dimensional feature vector. 
